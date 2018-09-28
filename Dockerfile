@@ -1,8 +1,7 @@
 FROM dantup/dart_pi:latest
 
-WORKDIR /dart/app/
+WORKDIR /app/
 COPY . .
-
 EXPOSE 8080
-ENTRYPOINT ["/dart/dart-sdk/bin/dart", "/dart/app/bin/main.dart"]
+ENTRYPOINT ["dart", "bin/main.dart"]
 
